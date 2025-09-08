@@ -55,6 +55,6 @@ if uploaded_file is not None:
         st.download_button(
             label="Download Cleaned CSV",
             data=towrite,
-            file_name="cleaned_data.csv",
+            file_name=f"{os.path.splitext(uploaded_file.name)[0]}_cleaned_data.csv",
             mime="text/csv"
         )
