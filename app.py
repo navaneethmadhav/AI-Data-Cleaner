@@ -4,7 +4,6 @@ import pandas as pd
 import google.generativeai as genai
 import io
 
-load_dotenv()
 apiKey = st.secrets["GEMINI_API_KEY"]
 genai.configure(api_key=apiKey)
 
