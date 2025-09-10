@@ -3,10 +3,9 @@ import streamlit as st
 import pandas as pd
 import google.generativeai as genai
 import io
-from dotenv import load_dotenv
 
 load_dotenv()
-apiKey = os.getenv("GEMINI_API_KEY")
+apiKey = st.secrets["GEMINI_API_KEY"]
 genai.configure(api_key=apiKey)
 
 st.title("AI-Based Data Cleaner (Gemini)")
