@@ -7,8 +7,8 @@ import io
 apiKey = st.secrets["GEMINI_API_KEY"]
 genai.configure(api_key=apiKey)
 
-st.title("AI-Based Data Cleaner (Gemini)")
-st.write("Upload a messy CSV/Excel file, and let AI clean it for you!")
+st.title("Data Cleaner (Gemini)")
+st.write("Upload a messy CSV/Excel file, and let us clean it for you!")
 
 # File uploader
 uploaded_file = st.file_uploader("Upload your file", type=["csv", "xlsx"])
